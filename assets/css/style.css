@@ -28,6 +28,7 @@ html{
     background-color: var(--color-background);
     color: var(--color-secondary);
     display: flex;
+    width: 100%;
 }
 
 .logo{
@@ -56,3 +57,40 @@ html{
     color: var(--color-primary);
 }
 
+.toggle{
+    position: absolute;
+    right: .5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* Media queries */
+
+@media only screen and (max-width: 600px){
+    .toggle{
+        display: flex;
+    }
+    .navLinks{
+        display: none;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navLinks ul{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navLinks li {
+        text-align: center;
+    }
+
+    .navLinks.active{
+        display: flex;
+    }
+} 
