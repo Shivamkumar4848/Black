@@ -4,10 +4,12 @@
 /* font-family: 'Anton', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 /* font-family: 'Kaushan Script', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Padauk&display=swap');
+/* font-family: 'Padauk', sans-serif; */
 
 :root{
     --color-background: #1A1423;
-    --color-primary: #AB8476;
+    --color-primary: #e6f700;
     --color-secondary: #fbfbfb;
 }
 
@@ -33,6 +35,7 @@ html{
 
 .logo{
     font-size:1.5rem;
+    font-family: 'Kaushan Script', cursive;
     margin: .5rem;
 }
 
@@ -49,6 +52,8 @@ html{
 .navLinks ul li a{
     text-decoration: none;
     display: block;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.2rem;
     color: var(--color-secondary);
     padding: 1rem;
 }
@@ -63,7 +68,99 @@ html{
     display: none;
     flex-direction: column;
     justify-content: space-between;
+    padding-top: 10px;
 }
+
+.hero h2{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding:0 0 5px 5px;
+    font-size: 3em;
+    width: 10%;
+}
+
+.main{
+    height: 100vh;
+    background-image: linear-gradient(90deg, #fbfbfb 50%, rgb(231, 235, 1) 50%);
+}
+
+.main h2{
+    font-size: 10rem;
+    position: absolute;
+}
+
+.main h2:first-child{
+    font-size: 6rem;
+    top: 40%;
+    left: 40%;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.main h2:last-child{
+    top: 50%;
+    left: 50%;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.section{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+}
+.section h2{
+    text-align: center;
+    font-size: 7rem;
+    color: var(--color-secondary);
+    background-color: var(--color-background);
+}
+
+.content{
+    width: 50%;
+}
+
+.content p{
+    padding: 20px;
+    font-size: 1.1rem;
+    font-family: 'Padauk', sans-serif;
+}
+
+
+
+/* .banner{
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    background-image: url('../img/img (2).jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+}
+
+.transparent{
+    width: 100%;
+    height: 70vh;
+    background-color: var(--color-background);
+    opacity: .7;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.transparent h1{
+    position: absolute;
+    top: 15%;
+    color: var(--color-secondary);
+    font-size: 90px;
+}
+
+.main{
+    background-color: var(--color-background);
+    height: 30vh;
+} */
 
 
 /* Media queries */
